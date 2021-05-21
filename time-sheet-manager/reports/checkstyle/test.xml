@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.17">
+<file name="C:\Users\c1855378\Desktop\team-9-admiral-client-project\time-sheet-manager\src\test\java\Application.java">
+</file>
+<file name="C:\Users\c1855378\Desktop\team-9-admiral-client-project\time-sheet-manager\src\test\java\com\nsa\team9\timesheetmanager\controllers\AdminControllerTest.java">
+<error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="11" column="8" severity="error" message="Unused import - org.springframework.boot.test.context.SpringBootTest." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="31" column="17" severity="error" message="Variable &apos;adminSearch&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="34" column="19" severity="error" message="Variable &apos;managerSearch&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="37" column="22" severity="error" message="Variable &apos;contractorSearch&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="41" column="17" severity="error" message="Name &apos;ShouldShowAdminPage&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="41" column="55" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="49" column="17" severity="error" message="Name &apos;ShouldShowJohnwithApprovedStatus&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="49" column="68" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="54" severity="error" message="Line is longer than 80 characters (found 117)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="55" severity="error" message="Line is longer than 80 characters (found 84)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="C:\Users\c1855378\Desktop\team-9-admiral-client-project\time-sheet-manager\src\test\java\com\nsa\team9\timesheetmanager\controllers\ContractorControllerTest.java">
+<error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="7" column="8" severity="error" message="Unused import - org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureWebMvc." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="27" column="17" severity="error" message="Name &apos;CheckTimeSheetFormShows&apos; must match pattern &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="30" column="17" severity="error" message="&apos;(&apos; should be on the previous line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="31" column="25" severity="error" message="&apos;(&apos; should be on the previous line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+</file>
+<file name="C:\Users\c1855378\Desktop\team-9-admiral-client-project\time-sheet-manager\src\test\java\com\nsa\team9\timesheetmanager\controllers\ManagerControllerTest.java">
+<error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="4" column="8" severity="error" message="Unused import - org.junit.Test." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="6" column="8" severity="error" message="Unused import - org.springframework.beans.factory.annotation.Autowired." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="9" column="8" severity="error" message="Unused import - org.springframework.test.web.servlet.MockMvc." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="11" column="15" severity="error" message="Unused import - org.hamcrest.Matchers.containsString." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="13" column="15" severity="error" message="Unused import - org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="14" column="15" severity="error" message="Unused import - org.springframework.test.web.servlet.result.MockMvcResultHandlers.print." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="15" column="15" severity="error" message="Unused import - org.springframework.test.web.servlet.result.MockMvcResultMatchers.content." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+</file>
+<file name="C:\Users\c1855378\Desktop\team-9-admiral-client-project\time-sheet-manager\src\test\java\com\nsa\team9\timesheetmanager\controllers\TimeSheetFormTest.java">
+<error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="16" column="15" severity="error" message="Unused import - org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
+<error line="23" severity="error" message="Line is longer than 80 characters (found 86)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="30" column="25" severity="error" message="Variable &apos;timeSheetSearch&apos; must be private and have accessor methods." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
+<error line="38" severity="error" message="Line is longer than 80 characters (found 156)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="41" column="21" severity="error" message="&apos;(&apos; should be on the previous line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="42" column="29" severity="error" message="&apos;(&apos; should be on the previous line." source="com.puppycrawl.tools.checkstyle.checks.whitespace.MethodParamPadCheck"/>
+<error line="61" severity="error" message="Line is longer than 80 characters (found 104)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="C:\Users\c1855378\Desktop\team-9-admiral-client-project\time-sheet-manager\src\test\java\com\nsa\team9\timesheetmanager\controllers\queries\AdminQueryTest.java">
+</file>
+<file name="C:\Users\c1855378\Desktop\team-9-admiral-client-project\time-sheet-manager\src\test\java\com\nsa\team9\timesheetmanager\domain\AgencyTest.java">
+<error line="1" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="28" column="49" severity="error" message="&apos;{&apos; is not preceded with whitespace." source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+</file>
+</checkstyle>

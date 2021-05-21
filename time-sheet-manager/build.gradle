@@ -1,0 +1,84 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+    id 'checkstyle'
+}
+
+checkstyleMain{
+    configFile = file("${configDir}/checkstyleMain.xml")
+    maxErrors=710
+}
+
+checkstyleTest{
+    configFile = file("${configDir}/checkstyleTest.xml")
+    ignoreFailures=true
+    maxErrors=710
+}
+
+group = 'com.nsa.team9.timesheetmanager'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+reporting.baseDir = "reports"
+testResultsDirName = "$buildDir/test-results"
+task showDirs {
+    doLast {
+        logger.quiet(rootDir.toPath().relativize(project.reportsDir.toPath()).toString())
+        logger.quiet(rootDir.toPath().relativize(project.testResultsDir.toPath()).toString())
+    }
+}
+
+configurations {
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+    compileOnly {
+        extendsFrom annotationProcessor
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-data-rest'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-web-services'
+    implementation('org.springframework.boot:spring-boot-starter-mail')
+    compileOnly 'org.projectlombok:lombok'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    runtimeOnly 'mysql:mysql-connector-java'
+    runtimeOnly 'com.h2database:h2'
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
+    // https://mvnrepository.com/artifact/org.passay/passay
+    compile group: 'org.passay', name: 'passay', version: '1.0'
+    compile "com.google.guava:guava:16+"
+    compile group: 'org.apache.velocity', name: 'velocity', version: '1.6.4'
+
+}
+
+ext {
+    set('snippetsDir', file("build/generated-snippets"))
+}
+
+test {
+    useJUnit()
+    maxHeapSize = '1G'
+    outputs.dir snippetsDir
+    reports {
+        junitXml.enabled = true
+        html.enabled = true
+    }
+}

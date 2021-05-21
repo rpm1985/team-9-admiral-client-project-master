@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      lang="en"
+      xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Admiral</title>
+</head>
+<body>
+
+<footer th:fragment="footer">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../static/css/footer.css" th:href="@{/css/footer.css}">
+
+    <div class="footer-links">
+        <div class="wrapper">
+            <div>
+                <ul class="links group">
+                    <li>
+                        <span>© 1993-2019 Admiral</span>
+                    </li>
+                    <li>
+                        <a href="https://www.admiral.com/sitemap.php">SiteMap</a>
+                    </li>
+                    <li>
+                        <a href="https://www.admiral.com/contact-us">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="https://www.admiral.com/accessibility">Accessibility</a>
+                    </li>
+                    <li>
+                        <a href="https://www.admiral.com/insurance/your-policy/conditions-of-use.php">Conditions of Use</a>
+                    </li>
+                    <li>
+                        <a href="https://www.admiral.com/your-privacy-and-security">Privacy & Security</a>
+                    </li>
+                    <li>
+                        <a href="https://www.admiral.com/press-office">Press Office</a>
+                    </li>
+                    <li>
+                        <a href="https://www.admiral.com/cookie-policy">Cookie Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="address">
+                <p itemprop="location" itemtype="http://schema.org/PostalAddress" itemscope="itemscope">
+                    <span itemprop="name">Admiral</span>
+                    ,
+                    <span itemprop="streetAddress">Tŷ Admiral, David Street</span>
+                    ,
+                    <span itemprop="addressLocality">Cardiff</span>
+                    ,
+                    <span itemprop="postalCode">CF10 2EH</span>
+                    ,
+                    <span itemprop="addressCountry">United Kingdom</span>
+                </p>
+            </div>
+            <div class="registered">
+                <p>Admiral Group plc is registered in England and Wales at Tŷ Admiral, David Street, Cardiff. CF10 2EH (Reg No: 03849958). Admiral Financial Services Limited (Reg No: 10255225) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 771862). EUI Limited (Reg No: 02686904) is a subsidiary of Admiral Group plc and is authorised and regulated by the Financial Conduct Authority (Firm reference number: 309378). These details can be confirmed by visiting the Financial Services Register,
+                <a href="http://www.fca.org.uk/register" rel="nofollow">www.fca.org.uk/register</a> . EUI Limited acts for, and on behalf of, other regulated insurance companies. Further details may be provided on request.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
